@@ -1,0 +1,115 @@
+:root {
+    --warna-1-color: #FF6363;
+    --warna-2-color: #FAF5E4;
+}
+
+.new-news {
+    width: 100%;
+    object-fit: cover;
+}
+.new-news img {
+    width: 100%;
+    height: 400px;
+    transition: 0.3s;
+}
+.new-news:hover > img {
+    filter: blur(2px);
+}
+.height-400 {
+    height: 400px;
+}
+@media (max-width: 548px) {
+    .height-400 {
+        height: auto;
+    }
+}
+.height-50 {
+    height: 50%;
+}
+.text-new-news {
+    bottom: 0;
+    padding: 7px 10px;
+    width: 100%;
+    overflow: hidden;
+}
+.text-new-news h2 {
+    margin: 0;
+    margin-top: 15px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: #FAF5E4;
+    font-weight: bold;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.527);
+    transition: 0.3s;
+}
+.text-new-news h2:hover {
+    color: #FF6363;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.295);
+}
+.kategori-left span {
+    background-color: rgb(248, 223, 83);
+    color: rgb(48, 48, 48);
+    padding: 7px;
+    white-space: nowrap;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.288);
+}
+.new-news-right {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+.new-news-right img {
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+}
+.new-news-right:hover > img {
+    filter: blur(2px);
+}
+.text-new-news-right {
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    padding: 7px 10px;
+}
+.text-new-news-right h2 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 1.5em;
+    margin: 0;
+    margin-top: 10px;
+    color: #FAF5E4;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.527);
+    font-weight: bold;
+    transition: 0.3s;
+}
+@media (max-width: 548px) {
+    .text-new-news h2 {
+        font-size: 1.3em;
+    }
+    .text-new-news-right h2 {
+        font-size: 1.3em;
+    }
+}
+.text-new-news-right h2:hover {
+    color: #FF6363;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.295);
+}
+.kategori-right span {
+    background-color: rgb(248, 223, 83);
+    color: rgb(48, 48, 48);
+    padding: 5px;
+    width: max-content;
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.288);
+}
+@media (max-width: 834px) {
+    .kategori-right {
+        display: flex;
+        flex-wrap: wrap;
+    }
+     .kategori-right > span {
+        margin: 5px;
+    }
+}

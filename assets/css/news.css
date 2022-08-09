@@ -1,0 +1,14 @@
+.font-bold {
+    font-weight: bold;
+    color: #FF6363;
+}
+.button-view-more {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#view-all {
+    font-weight: bold;
+    width: 150px;
+}
